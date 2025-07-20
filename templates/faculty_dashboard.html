@@ -1,0 +1,9 @@
+<h2>Welcome Faculty: {{ email }}</h2>
+<p>This is your faculty dashboard.</p>
+<a href="/logout">Logout</a>
+<form method="POST" action="/upload_marks">
+  <input type="text" name="student_email" placeholder="Student Email" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <input type="number" name="marks" placeholder="Marks" required>
+  <button type="submit" class="btn btn-primary mt-2">Upload Marks</button>
+</form>
